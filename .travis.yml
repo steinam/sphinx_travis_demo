@@ -16,7 +16,8 @@ install:
     - pip install --user travis-sphinx
 
 script:
-    - travis-sphinx build
+#    - travis-sphinx build
+    make html
 
 after_success:
     - travis-sphinx deploy
